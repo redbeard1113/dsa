@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:layout_marginTop="90dp">
+    <TextView
+        android:id="@+id/signuptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/signup_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please fill in required information to create an account"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/usernamesignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Your username (at least 6 characters)"
+        android:background="@color/cardview_shadow_start_color" />
+    <EditText
+        android:id="@+id/passwordsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Your password (at least 9 characters)"
+        android:inputType="textPassword"
+        android:background="@color/cardview_shadow_start_color" />
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Your phone number"
+        android:inputType="number"
+        android:background="@color/cardview_shadow_start_color" />
+    <RadioGroup
+        android:id="@+id/sexGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <RadioButton
+            android:id="@+id/maleButton"
+            android:text="Male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/femaleButton"
+            android:text="Female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/rememberCheckbox"
+        android:text="remember password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"/>
+
+
+
+</LinearLayout>
